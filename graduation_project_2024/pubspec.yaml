@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.9
   font_awesome_flutter: ^10.6.0
+  animations: ^2.0.8
+  flutter_credit_card: ^3.0.3
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +49,15 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.2.3+1
+  flutter_launcher_icons: ^0.9.3
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/images/app_logo_splash.png"
+  android: true
+  ios: true
+  web: false
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -78,7 +89,7 @@ flutter:
     - family: Myfont
       fonts:
         - asset: assets/fonts/Audiowide.ttf
-      
+
     - family: font2
-      fonts: 
+      fonts:
         - asset: assets/fonts/Poppins-Black.ttf

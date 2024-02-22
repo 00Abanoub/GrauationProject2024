@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:graduation_project_2024/components/icons_View.dart';
 import 'package:graduation_project_2024/components/components.dart';
@@ -141,11 +140,16 @@ class _LoginViewState extends State<LoginView> {
                           // you'd often call a server or save the information in a database.
                           print(emailController.text);
                           print(passwordController.text);
+                        }else{
+                          Navigator.pushNamed(context, '/CityView');
                         }
+                          
+                        
                       },
                       text: " Sign in ",
                       isUpperCase: false,
                       radius: 10.0,
+                      
                     ),
 
                     const SizedBox(
@@ -160,9 +164,7 @@ class _LoginViewState extends State<LoginView> {
                             fontSize: 20,
                           ),
                         ),
-                        const SizedBox(
-                          width: 8,
-                        ),
+                        
                         TextButton(
                           onPressed: () {
                             print(emailController.text);
@@ -170,7 +172,7 @@ class _LoginViewState extends State<LoginView> {
                             Navigator.pushNamed(context, '/SignUp');
                           },
                           child: const Text(
-                            'Register Now',
+                            'Sign up here ',
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ),
@@ -300,7 +302,6 @@ class _LoginViewState extends State<LoginView> {
                             ],
                           ),
                         ),
-                      
                       ],
                     ),
                   ],

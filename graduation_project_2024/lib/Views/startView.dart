@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:graduation_project_2024/routes/app_routes.dart';
 
 class StartView extends StatelessWidget {
   StartView({super.key});
@@ -10,114 +11,90 @@ class StartView extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            'assets/images/iPhone2.png',
+            'assets/images/ffff.png',
             fit: BoxFit.cover,
           ),
-          Column(
-            children: [
-              Container(
-                alignment: Alignment.center,
-                width: double.infinity,
-                height: 500,
-                child: const Text(
-                  'TripEase',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 50,
-                    fontWeight: FontWeight.w400,
-                    fontFamily: "Myfont",
-                  ),
-                ),
-              ),
-              const SizedBox(
-                height: 80.0,
-              ),
-              Stack(
-                children: [
-                  Text(
-                    ' Unlock the Secrets of Travel ,Where Dreams Take Flight ',
-                    textAlign: TextAlign.center,
-                    maxLines: 3,
-                    style: TextStyle(
-                      fontSize: 29,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: "Myfont",
-                      foreground: Paint()
-                        ..style = PaintingStyle.stroke
-                        ..strokeWidth = 7
-                        ..color = const Color(0xff045b6f),
-                    ),
-                  ),
-                  const Text(
-                    ' Unlock the Secrets of Travel ,Where Dreams Take Flight ',
-                    textAlign: TextAlign.center,
-                    maxLines: 3,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              children: [
+                Container(
+                  alignment: Alignment.center,
+                  width: double.infinity,
+                  height: 500,
+                  child: const Text(
+                    'TripEase',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 29,
+                      fontSize: 50,
                       fontWeight: FontWeight.w400,
                       fontFamily: "Myfont",
                     ),
                   ),
-                ],
-              ),
-              const SizedBox(
-                height: 50.0,
-              ),
-              
-
-              SizedBox(
-                width: 250,
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [
-                        const Color.fromARGB(255, 28, 110, 177),
-                        // Colors.purpleAccent
-                        // Color(0xff516395),
-                        Colors.blueAccent,
-                        Color(0xff614385),
-                        //add more colors
-                      ],
+                ),
+                const Spacer(
+                  flex: 2,
+                ),
+                // const SizedBox(
+                //   height: 100.0,
+                // ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/Login');
+                    //AppRoutes.login;
+                   //Navigator.pushNamed(context, AppRoutes.login);
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Color(0xff00ad48),
+                      borderRadius: BorderRadius.circular(16),
                     ),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                    BoxShadow(
-                          color:
-                              Color.fromRGBO(0, 0, 0, 0.57), //shadow for button
-                          blurRadius: 5), //blur radius of shadow
-                    ],
-                  ),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.transparent,
-                      onSurface: Colors.transparent,
-                      shadowColor: Colors.transparent,
-                      //make color or elevated button transparent
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/Login');
-                    },
-                    child:const  Padding(
-                      padding: EdgeInsets.only(
-                        top: 10,
-                        bottom: 10,
-                        left: 15,
-                        right: 0,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text("Get Started",style: TextStyle(fontSize: 25.0),textAlign: TextAlign.center,),
-                          SizedBox(width: 15,),
-                          Icon(Icons.arrow_forward ,size: 25.0,),
-                        ],
+                    child: const Center(
+                      child: Text(
+                        "Continue with Email or Phone ",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
+                const SizedBox(
+                  height: 25.0,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    //AppRoutes.signup;
+                    Navigator.pushNamed(context, '/SignUp');
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Create an account ",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Spacer(
+                  flex: 1,
+                ),
+              ],
+            ),
           ),
         ],
       ),

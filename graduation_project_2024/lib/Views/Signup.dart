@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:graduation_project_2024/components/icons_View.dart';
 import 'package:graduation_project_2024/components/components.dart';
@@ -42,7 +41,7 @@ class _SignUpViewState extends State<SignUpView> {
                         ),
                       ),
                     ),
-      
+
                     const SizedBox(
                       height: 50,
                     ),
@@ -71,11 +70,11 @@ class _SignUpViewState extends State<SignUpView> {
                         },
                         labelText: "Email Address",
                         prefixIcon: Icons.email),
-      
+
                     const SizedBox(
                       height: 20,
                     ),
-      
+
                     defaultTextFormFiled(
                       //controller: passwordController,
                       type: TextInputType.visiblePassword,
@@ -91,7 +90,7 @@ class _SignUpViewState extends State<SignUpView> {
                       //? How fetch the value to change it when you pressed ?!
                       // save the value taken from components a variable to use in this view
                       //that variable make me changes the value from components normally
-      
+
                       isPassword: isPassword,
                       //? How can set state for pressed ?! we must replace stateless to stateful widget.
                       suffixPressed: () {
@@ -121,7 +120,7 @@ class _SignUpViewState extends State<SignUpView> {
                       //? How fetch the value to change it when you pressed ?!
                       // save the value taken from components a variable to use in this view
                       //that variable make me changes the value from components normally
-      
+
                       isPassword: isPassword,
                       //? How can set state for pressed ?! we must replace stateless to stateful widget.
                       suffixPressed: () {
@@ -133,11 +132,11 @@ class _SignUpViewState extends State<SignUpView> {
                       },
                       suffixIcon: Icons.remove_red_eye,
                     ),
-      
+
                     const SizedBox(
                       height: 40,
                     ),
-      
+
                     //* Button submit login
                     defaultButton(
                       width: double.infinity,
@@ -151,11 +150,11 @@ class _SignUpViewState extends State<SignUpView> {
                           print(passwordController.text);
                         }
                       },
-                      text: " Sign in ",
+                      text: " Sign Up ",
                       isUpperCase: false,
                       radius: 10.0,
                     ),
-      
+
                     const SizedBox(
                       height: 60.0,
                     ),
@@ -171,7 +170,7 @@ class _SignUpViewState extends State<SignUpView> {
                         SizedBox(
                           height: 25.0,
                         ),
-      
+
                         // Row of show SVG
                         // Row(
                         //   mainAxisAlignment: MainAxisAlignment.center,
@@ -248,7 +247,7 @@ class _SignUpViewState extends State<SignUpView> {
                         //     ),
                         //   ],
                         // ),
-      
+
                         Center(
                           child: Wrap(
                             spacing: 1.0,
