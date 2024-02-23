@@ -16,7 +16,7 @@ class DontHaveAccountRow extends StatelessWidget {
         children: [
           const Text('Don\'t Have Account?'),
           TextButton(
-            onPressed: () => Navigator.pushNamed(context, ''),
+            onPressed: () => Navigator.pushNamed(context, '/SignUp'),
             child: const Text('Sign Up'),
           ),
         ],

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:graduation_project_2024/utils/validators.dart';
 
-import '../../../themes/app_themes.dart';
+import '../themes/app_themes.dart';
 
 class LoginPageForm extends StatefulWidget {
   const LoginPageForm({
@@ -51,41 +51,26 @@ class _LoginPageFormState extends State<LoginPageForm> {
                 ),
               ),
               const SizedBox(height: 8),
+
               TextFormField(
                 keyboardType: TextInputType.number,
                 validator: Validators.requiredWithFieldName('Phone'),
                 textInputAction: TextInputAction.next,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey[200],
+                  //fillColor: Colors.grey[300],
+                  fillColor: const Color.fromARGB(255, 207, 209, 222),
+                  contentPadding:
+                      const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide.none,
+                  ),
                 ),
               ),
+
               const SizedBox(height: 20),
 
-              // Password Field
-              // const Text(
-              //   "Password",
-              //   style: TextStyle(
-              //     color: Colors.black,
-              //     fontSize: 20,
-              //   ),
-              // ),
-              // const SizedBox(height: 8),
-              // TextFormField(
-              //   validator: Validators.password,
-              //   onFieldSubmitted: (v) => onLogin(),
-              //   textInputAction: TextInputAction.done,
-              //   obscureText: !isPasswordShown,
-              //   decoration: InputDecoration(
-              //     suffixIcon: Material(
-              //       color: Colors.transparent,
-              //       child: IconButton(
-              //           onPressed: onPassShowClicked,
-              //           icon: Icon(Icons.visibility)),
-              //     ),
-              //   ),
-              // ),
-              /////chatgpt////
               // Password Field
               const Text(
                 "Password",
@@ -95,6 +80,7 @@ class _LoginPageFormState extends State<LoginPageForm> {
                 ),
               ),
               const SizedBox(height: 8),
+
               TextFormField(
                 validator: Validators.password,
                 onFieldSubmitted: (v) => onLogin(),
@@ -102,9 +88,18 @@ class _LoginPageFormState extends State<LoginPageForm> {
                 obscureText: !isPasswordShown,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey[200],
+                  //fillColor: Colors.grey[200],
+                  fillColor: const Color.fromARGB(255, 207, 209, 222),
+
+                  contentPadding:
+                      const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
                   //remove the line under the password when write it
-                  border: InputBorder.none,
+                  //border: InputBorder.none,
+                  //chatgpt
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide.none,
+                  ),
                   suffixIcon: Material(
                     color: Colors.transparent,
                     child: IconButton(

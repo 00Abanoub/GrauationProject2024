@@ -13,7 +13,16 @@ class LoginPageHeader extends StatelessWidget {
           width: MediaQuery.of(context).size.width * 0.3,
           child: AspectRatio(
               aspectRatio: 1 / 1,
-              child: Image.asset('assets/images/password.gif')),
+              //child: Image.asset('assets/images/password.gif')
+              child:  ColorFiltered(
+              colorFilter: const ColorFilter.mode(
+                 Color(0xffefefef), // Set the desired background color here
+                BlendMode.darken,
+              ),
+              child: Image.asset('assets/images/password.gif'),
+            ),
+              
+              ),
         ),
         const SizedBox(height: 10,),
         Text(

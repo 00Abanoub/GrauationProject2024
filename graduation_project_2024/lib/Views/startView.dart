@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:graduation_project_2024/routes/app_routes.dart';
+
 
 class StartView extends StatelessWidget {
   StartView({super.key});
@@ -40,13 +40,14 @@ class StartView extends StatelessWidget {
                 // ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Login');
+                    Navigator.pushNamed(context, '/Login_or_signup');
                   },
                   child: Container(
                     width: double.infinity,
                     height: 55,
                     decoration: BoxDecoration(
-                      color: const Color(0xff00ad48),
+                      //color: const Color(0xff00ad48),
+                      color:const Color(0xff04658E),
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: const Center(
