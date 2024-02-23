@@ -11,7 +11,7 @@ class StartView extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            'assets/images/ffff.png',
+            'assets/images/startimg.jpg',
             fit: BoxFit.cover,
           ),
           Padding(
@@ -41,14 +41,12 @@ class StartView extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Login');
-                    //AppRoutes.login;
-                   //Navigator.pushNamed(context, AppRoutes.login);
                   },
                   child: Container(
                     width: double.infinity,
                     height: 55,
                     decoration: BoxDecoration(
-                      color: Color(0xff00ad48),
+                      color: const Color(0xff00ad48),
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: const Center(

@@ -20,7 +20,7 @@ class OnboardingView extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.width,
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.only(bottom: 10,left: 20,right: 20),
             child: Image.asset(
               data.image,
               fit: BoxFit.contain,
@@ -28,7 +28,7 @@ class OnboardingView extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.only(bottom: 20),
           child: Column(
             children: [
               Text(

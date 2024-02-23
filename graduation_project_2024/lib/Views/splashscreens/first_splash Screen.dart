@@ -51,6 +51,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffEFEFEF),
+      //backgroundColor: Color.fromARGB(255, 131, 27, 139),
       body: SafeArea(
         child: Column(
           children: [
@@ -83,24 +85,28 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     child: CircularProgressIndicator(
                       value: value,
                       strokeWidth: 6,
-                      backgroundColor: Colors.amber,
-                      color:Colors.blueAccent ,
+                      backgroundColor:  const Color.fromARGB(255, 255, 255, 255),
+                      color: const Color(0xff04658e),
+                      
                     ),
                   ),
                 ),
                 ElevatedButton(
                   onPressed: _gotoNextPage,
-                  style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                  // child: SvgPicture.asset(
-                  //   //AppIcons.arrowForward,
-                  //   icon:Icons.arrow_forward,
-                  //   color: Colors.white,
-                  // ),
-                  child: Icon(Icons.arrow_forward),
+                  style: ElevatedButton.styleFrom(
+                    shape: const CircleBorder(),
+                    backgroundColor: Color(0xff04658e),
+                  ),
+                  
+                  child: const Icon(
+                    Icons.arrow_forward,
+                    color: Colors.white,
+                    size: 29,
+                  ),
                 ),
               ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
           ],
         ),
       ),

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:graduation_project_2024/Views/Signup.dart';
+import 'package:graduation_project_2024/Views/Signupme.dart';
 import 'package:graduation_project_2024/Views/choose_City.dart';
-import 'package:graduation_project_2024/Views/login_View.dart';
 import 'package:graduation_project_2024/Views/startView.dart';
-import 'package:graduation_project_2024/routes/app_routes.dart';
+import 'Views/auth/login_view.dart';
 import 'Views/hobbiesView.dart';
+import 'Views/auth/login_or_signup_page.dart';
 import 'Views/splashscreens/first_splash Screen.dart';
 
 void main() {
@@ -30,7 +30,8 @@ class TripEase extends StatelessWidget {
       routes: {
         '//': (context) =>OnboardingPage(),
         '/': (context) => StartView(),
-        '/Login': (context) => LoginView(),
+        //'/Login': (context) => LoginView(),
+        '/Login': (context) => LoginPage(),
         '/SignUp': (context) => SignUpView(),
         '/CityView': (context) => CityView(),
         '/HobbiesView': (context) => HobbiesView(),
