@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-
-import '../constants/app_colors.dart';
-import '../widgets/sign_up_form.dart';
-import '../widgets/sign_up_page_header.dart';
+import '../widgets/sinup_widgets/sign_up_form.dart';
+import '../widgets/sinup_widgets/sign_up_page_header.dart';
 import 'splashscreens/model/app_defaults.dart';
 
-
-
-class SignUpView extends StatelessWidget {
+class SignUpView extends StatefulWidget {
   const SignUpView({Key? key}) : super(key: key);
 
   @override
+  State<SignUpView> createState() => _SignUpViewState();
+}
+
+class _SignUpViewState extends State<SignUpView> {
+  @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: AppColors.scaffoldWithBoxBackground,
+      backgroundColor: Color(0xffEFEFEF),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(

@@ -7,7 +7,7 @@ class LoginOrSignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: const Color(0xffEFEFEF),
+      backgroundColor:  Color(0xffEFEFEF),
       body: Column(
         children: [
           Spacer(flex: 2),
@@ -20,7 +20,7 @@ class LoginOrSignUpPage extends StatelessWidget {
     );
   }
 }
-
+// social icon buttons
 class _Footer extends StatelessWidget {
   const _Footer({
     Key? key,

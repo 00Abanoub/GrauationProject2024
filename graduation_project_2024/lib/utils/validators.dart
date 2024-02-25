@@ -16,6 +16,6 @@ class Validators {
   static RequiredValidator requiredWithFieldName(String? fieldName) =>
       RequiredValidator(errorText: '${fieldName ?? 'Field'} is required');
 
-   //Plain Required Validators
+  /// Plain Required Validator
   static final required = RequiredValidator(errorText: 'Field is required');
 }

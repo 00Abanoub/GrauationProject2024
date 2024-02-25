@@ -122,15 +122,15 @@ class AppTheme {
   static final otpInputDecorationTheme = InputDecorationTheme(
     floatingLabelBehavior: FloatingLabelBehavior.never,
     border: OutlineInputBorder(
-      borderSide: const BorderSide(width: 0.1),
+      borderSide: const BorderSide(width: 5),
       borderRadius: BorderRadius.circular(25),
     ),
     enabledBorder: OutlineInputBorder(
-      borderSide: const BorderSide(width: 0.1),
+      borderSide: const BorderSide(width: 0.5),
       borderRadius: BorderRadius.circular(25),
     ),
     focusedBorder: OutlineInputBorder(
-      borderSide: const BorderSide(width: 0.1),
+      borderSide: const BorderSide(width: 0.5),
       borderRadius: BorderRadius.circular(25),
     ),
   );

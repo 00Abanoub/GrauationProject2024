@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:graduation_project_2024/widgets/dont_have_account_row.dart';
-import 'package:graduation_project_2024/widgets/login_button.dart';
+import 'package:graduation_project_2024/widgets/login_widgets/dont_have_account_row.dart';
+import 'package:graduation_project_2024/widgets/login_widgets/login_button.dart';
 
-import '../widgets/login_header.dart';
-import '../widgets/login_page_form.dart';
+import '../widgets/login_widgets/login_header.dart';
+import '../widgets/login_widgets/login_page_form.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({Key? key}) : super(key: key);
